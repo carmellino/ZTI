@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 const PORT = 5000;
-const TMP_FBX_FILE_PATH = '/home/diego/studia/zti1/ZTI/Server/fbxTempDir/tmp.fbx';
+const TMP_FBX_FILE_PATH = '/home/diego/studia/zti/ZTI/Server/fbxTempDir/tmp.fbx';
 
 app.listen(PORT, () =>
 {
