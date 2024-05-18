@@ -1,0 +1,30 @@
+Canvas
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+#SlidersContainer
+{
+  position:absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+#SlidersContainerName
+{
+  color: white;
+}
+
+#SliderName
+{
+  font-size: 12;
+  color: white;
+  display:inline-block;
+}
+button
+{
+  display:inline-block;
+}

@@ -1,1 +1,2 @@
 # ZTI
+Zaawansowane Techniki Internetowe.

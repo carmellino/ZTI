@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZTI</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body>
+    <divclass="SlidersContainer">
+      <button id="PreviousModelButton">Previous model</button>
+      <button id="NextModelButton">Next model</button>
+    </div>
+      <div class="SlidersContainer">
+        <div id="SlidersContainerName">SpotLight settings</div>
+        <button id="AddSpotLightButton">Add Spotlight</button>
+        <button id="DeleteSpotLightButton">Delete Spotlight</button>
+        <div id="SliderName">Light color red</div>
+        <input type="range" min="1" max="255" class="slider" id="SpotLightColorRedSlider">
+        <div id="SliderName">Light color green</div>
+        <input type="range" min="1" max="255" class="slider" id="SpotLightColorGreenSlider">
+        <div id="SliderName">Light color blue</div>
+        <input type="range" min="1" max="255" class="slider" id="SpotLightColorBlueSlider">
+        <div id="SliderName">SpotLight intensity</div>
+        <input type="range" min="0" max="10000" value="5000" class="slider" id="SpotLightIntensitySlider">
+        <div id="SliderName">SpotLight angle</div>
+        <input type="range" min="0" max="157" value="100" class="slider" id="SpotLightAngleSlider">
+      </div>
+      <div id="SlidersContainerName">PointLight settings</div>
+      <div class="SlidersContainer">
+        <button id="AddPointLightButton">Add PointLight</button>
+        <button id="DeletePointLightButton">Delete PointLight</button>
+        <div id="SliderName">Light color red</div>
+        <input type="range" min="1" max="255" class="slider" id="PointLightColorRedSlider">
+        <div id="SliderName">Light color green</div>
+        <input type="range" min="1" max="255" lass="slider" id="PointLightColorGreenSlider">
+        <div id="SliderName">Light color blue</div>
+        <input type="range" min="1" max="255" class="slider" id="PointLightColorBlueSlider">
+        <div id="SliderName">SpotLight intensity</div>
+        <input type="range" min="0" max="10000" value="5000" class="slider" id="PointLightIntensitySlider">
+      </div>
+
+      <canvas id="Canvas"></canvas>
+      <script type="module" src="src/main.js"></script>
+  </body>
+</html>
