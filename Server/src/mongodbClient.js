@@ -3,8 +3,8 @@ const util = require('util');
 const fs = require('fs');
 const fsReadFile = util.promisify(fs.readFile);
 
-const tmpFbxFilePath = "/home/diego/studia/zti1/ZTI/Server/fbxTempDir/tmp.fbx";
-const uriPath = "/home/diego/studia/zti1/ZTI/Server/uri.txt"
+const TMP_FBX_FILE_PATH = "/home/diego/studia/zti/ZTI/Server/fbxTempDir/tmp.fbx";
+const uriPath = "/home/diego/studia/zti/ZTI/Server/uri.txt"
 var client = null;
 
 async function start()
@@ -56,12 +56,12 @@ async function getFbx(fileName)
     if(fileName == doc.filename)
     {
       console.log("getFbx(" + fileName + "): found it");
-      const writeStream = bucket.openDownloadStreamByName(fileName).pipe(fs.createWriteStream(tmpFbxFilePath));
+      const writeStream = bucket.openDownloadStreamByName(fileName).pipe(fs.createWriteStream(TMP_FBX_FILE_PATH));
       await new Promise((resolve) =>
       {
         writeStream.on('finish', resolve);
       });
-      console.log('Plik został pomyślnie zapisany na dysku');
+      console.log('File downloaded successfuly');
     }
   }
   console.log("getFbx(" + fileName + "): end");
